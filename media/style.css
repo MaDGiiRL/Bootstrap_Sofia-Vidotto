@@ -1,0 +1,168 @@
+/*ROOT*/
+:root {
+    --bg: #1F2326;
+    --pure: #fff;
+    --shadow: #000;
+    --hover: #F767B3;
+    --lighthover: #f767b450;
+}
+
+/*FONTS*/
+@font-face {
+    font-family: "Josefin";
+    src: url(./fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Simple";
+    src: url(./fonts/Simple\ Michael.otf);
+}
+
+/*GENERALE*/
+body {
+    font-family: "josefin";
+}
+
+/*TITOLI*/
+h1 {
+    color: var(--hover)
+}
+
+/*LINK*/
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--hover);
+}
+
+/* BACKGROUNDS */
+.bg-body {
+    background-image: url(./media/pattern.jpg);
+}
+.bg-nav{
+    background-color: var(--bg);
+    box-shadow: 0 0 18px var(--shadow)
+}
+.bg-header{
+    background-image: url(./media/patternheader.png);
+}
+
+/*SHADOWS*/
+.box-shadow {
+    box-shadow: 0 0 18px var(--shadow)
+}
+
+/*NAV*/
+.navbar-brand {
+    width: 50px
+}
+.navbar-nav {
+    --bs-nav-link-color: var(--pure);
+    --bs-nav-link-hover-color: var(--hover);
+    font-family: "Simple";
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    gap: 40px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--hover);
+}
+.dropdown-menu {
+    --bs-dropdown-font-size: 1.2rem;
+    color: var(--pure);
+    --bs-dropdown-bg: var(--shadow);
+    --bs-dropdown-border-color: var(--hover);
+    --bs-dropdown-border-radius: var(--bs-border-radius);
+    --bs-dropdown-box-shadow: var(--shadow);
+    --bs-dropdown-link-color: var(--pure);
+    --bs-dropdown-link-hover-color: var(--hover);
+    --bs-dropdown-link-hover-bg: var(--lighthover);
+    --bs-dropdown-link-active-color: var(--pure);
+    --bs-dropdown-link-active-bg: var(--hover);
+    color: var(--pure);
+    border: var(--bs-dropdown-border-width) solid var(--hover);
+}
+
+/*CARDS*/
+.card {
+width: 35rem;
+border: 1px solid var(--hover);
+background-color: var(--bg);
+color: var(--pure);
+box-shadow: 0 0 18px var(--shadow)
+}
+.list-group-flush>.list-group-item {
+    border-width: 0 0 var(--bs-list-group-border-width);
+    border-color:  var(--hover);
+    background-color: var(--bg);
+    color: var(--pure);
+    font-family: "Simple";
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.list-group-item::first-letter{
+    color: var(--hover)
+}
+.card-title {
+    font-family: "Simple";
+    font-size: 2rem;
+    color: var(--hover);
+    text-align: center;
+}
+.card-text {
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 25px
+}
+
+/*MEDIA QUERIES CORPO CARD*/
+@media screen and (max-width: 992px)  { 
+    .card-text {
+        overflow: auto;
+        height: 150px;
+    }
+ }
+ @media screen and (min-width: 576px)   { 
+    .card {
+           width: 100%
+    }
+ }
+
+/*ACCORDION*/
+.accordion {
+    --bs-accordion-color: var(--pure);
+    --bs-accordion-bg: var(--bg);
+    --bs-accordion-border-color: var(--hover);
+    --bs-accordion-border-radius: 0px;
+    --bs-accordion-btn-color: var(--pure);
+    --bs-accordion-btn-bg: var(--bg);
+    --bs-accordion-btn-focus-box-shadow: 0 0 18px var(--shadow);
+    --bs-accordion-active-color: var(--shadow);
+    --bs-accordion-active-bg: var(--hover);
+    font-size: 1.4rem
+}
+.accordion-button {
+    color: var(--pure);
+    font-family: "Simple";
+    font-size: 2.4rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.collapsed {
+    background-image: url(./media/patternheader.png);
+}
+
+
+ /*CAROUSEL*/
+ .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*FOOTER*/
+.footer{
+    letter-spacing: 4px;
+}
